@@ -7,3 +7,9 @@ class MovieModelSerializer(serializers.ModelSerializer):
     class Meta:
         model = MovieModel
         fields = '__all__'
+
+class MovieVideoSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model=MovieModel
+        fields = ['id', 'video']
